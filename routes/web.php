@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Http\Fincas\FincasIndex;
 use App\Livewire\Http\Fincas\CrearFinca;
 use App\Livewire\Http\Fincas\EditarFinca;
+use App\Livewire\Chat;
 
 Route::view('/', 'welcome');
 
@@ -15,6 +16,7 @@ Route::middleware(['auth', 'verified'])->group(function () { // Inicio del grupo
     Route::get('/fincas', FincasIndex::class)->name('fincas.index');
     Route::get('/fincas/crear', CrearFinca::class)->name('fincas.crear');
     Route::get('/editar-finca/{fincaId}', EditarFinca::class)->name('editar-finca');
+    Route::get('/chat', Chat::class);
 
     
 }); // Fin del grupo con autenticación 

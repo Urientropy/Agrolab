@@ -1,12 +1,12 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
+        <h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-gray-200">
+            {{ __('Inicio') }}
         </h2>
     </x-slot>
 
     <div class="p-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 dark:bg-gray-800">
-        <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center mb-4 justify-betdsween">
             <div class="flex-shrink-0">
                 <span
                     class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white">120</span> <h3
